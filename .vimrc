@@ -72,10 +72,18 @@ au BufNewFile,BufRead *.py,*.md
     \ set autoindent |
     \ set fileformat=unix 
 
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js, *.html, *.css, *.dot
     \ set tabstop=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2 
+    \ set shiftwidth=2 | 
+    \ set autoindent 
+
+autocmd Filetype dot 
+	\ setlocal tabstop=2 |
+	\ setlocal softtabstop=2 |
+	\ setlocal shiftwidth=2 |
+        \ setlocal autoindent
+
 
 " show blank
 highlight BadWhitespace ctermbg=red guibg=darkred
