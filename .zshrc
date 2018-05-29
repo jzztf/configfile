@@ -1,20 +1,25 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.pycharm-community-2018.1.3/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ztf/.oh-my-zsh
-
+  export ZSH=/home/ztf/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-# fine themes: muse;
+#ZSH_THEME="arrow"
+#ZSH_THEME="random"
+ZSH_THEME="jispwoso"
 
-ZSH_THEME="random"
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -33,7 +38,7 @@ CASE_SENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -55,7 +60,9 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colorize)
+plugins=(
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,7 +71,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -77,7 +84,7 @@ export LANG=en_US.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -87,29 +94,11 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias i3='ipython3'
-alias p3='python3'
-alias cm='chromium-browser &'
-alias fx='firefox &'
-alias gaa='git add .'
-alias gst='git status'
-alias gcm='git commit'
-alias gcmm='git commit -m'
-alias glg='git log'
-alias glgo='git log --pretty=oneline'
-alias wiki='cd ~/Documents/wiki'
-alias notes='cd ~/Documents/wiki/notes'
-alias nbk='jupyter notebook --no-mathjax --no-browser'
-alias tmp='cd ~/tmp/'
-alias py2='cd ~/Project/py2; cd'
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-#. /usr/local/lib/python3.6/dist-packages/powerline/bindings/zsh/powerline.zsh
-
-
+alias leton="cd ~/.appimage/;./leton.AppImage"
+alias shadowsocks="cd ~/.appimage/;./shadowsocks.AppImage"
+alias ipys="ipython --profile='simple'"
+alias docs="cd ~/notes/docs"
+alias stopsql='sudo service mysql stop'
+#
+#
 source /usr/local/bin/activate.sh
