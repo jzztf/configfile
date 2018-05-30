@@ -36,7 +36,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 "Bundle 'gabrielelana/vim-markdown'Plugin 'junegunn/goyo.vim'
-
+Plugin 'iamcco/markdown-preview.vim'
 
 " git intergration
 Plugin 'tpope/vim-fugitive'
