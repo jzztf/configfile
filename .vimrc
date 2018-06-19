@@ -35,8 +35,12 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 " markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-"Bundle 'gabrielelana/vim-markdown'Plugin 'junegunn/goyo.vim'
+"Bundle 'gabrielelana/vim-markdown'
+Plugin 'junegunn/goyo.vim'
 Plugin 'iamcco/markdown-preview.vim'
+
+"graphviz
+Plugin 'wannesm/wmgraphviz.vim'
 
 " git intergration
 Plugin 'tpope/vim-fugitive'
@@ -72,7 +76,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " autoindent
 
-au BufNewFile,BufRead *.py,*.md
+au BufNewFile,BufRead *.py,*.md,*.dot
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
@@ -87,3 +91,4 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set shiftwidth=2
 
 set relativenumber
+set nu

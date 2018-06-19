@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.pycharm-community-2018.1.3/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.pycharm-community-2018.1.3/bin:/usr/java/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/ztf/.oh-my-zsh
@@ -61,7 +61,7 @@ ZSH_THEME="jispwoso"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git history
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -99,6 +99,6 @@ alias shadowsocks="cd ~/.appimage/;./shadowsocks.AppImage"
 alias ipys="ipython --profile='simple'"
 alias docs="cd ~/notes/docs"
 alias stopsql='sudo service mysql stop'
-#
+#**
 #
 source /usr/local/bin/activate.sh
