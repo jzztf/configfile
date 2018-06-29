@@ -99,6 +99,8 @@ alias shadowsocks="cd ~/.appimage/;./shadowsocks.AppImage"
 alias ipys="ipython --profile='simple'"
 alias docs="cd ~/notes/docs"
 alias stopsql='sudo service mysql stop'
+alias e="emacsclient -t"
 #**
 #
 source /usr/local/bin/activate.sh
+export ALTERNATE_EDITOR=""

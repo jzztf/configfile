@@ -10,6 +10,16 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+"dracula theme
+"https://draculatheme.com/vim/
+"https://github.com/dracula/vim
+"move the dracula.vim file into ~/.vim/colors and add the following lines into your vimrc file
+":help dracula
+Plugin 'dracula/vim'
+syntax on
+color dracula
+let g:airline_theme='dracula'
+
 " airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -123,3 +133,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 set relativenumber
 set nu
+
+" map the keys 'jk' to the escape key to improve efficiency.
+imap jk <Esc>
