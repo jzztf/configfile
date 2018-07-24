@@ -99,8 +99,10 @@ alias shadowsocks="cd ~/.appimage/;./shadowsocks.AppImage"
 alias ipys="ipython --profile='simple'"
 alias docs="cd ~/notes/docs"
 alias stopsql='sudo service mysql stop'
-alias e="emacsclient -t"
+alias e="emacsclient -t 2> /dev/null"
+alias g="google-chrome --proxy-server='http://127.0.0.1:45933' 2>/dev/null"
+alias mp3-dl="youtube-dl -x --audio-format mp3 --audio-quality 320K "
 #**
 #
 source /usr/local/bin/activate.sh
-export ALTERNATE_EDITOR=""
+#export ALTERNATE_EDITOR=""
