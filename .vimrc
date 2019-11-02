@@ -70,30 +70,30 @@ syntax on
 Plugin 'scrooloose/syntastic'
 
 " tree
-Plugin 'scrooloose/nerdtree'
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+"Plugin 'scrooloose/nerdtree'
+"let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 " markdown
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
 "Bundle 'gabrielelana/vim-markdown'
-Plugin 'junegunn/goyo.vim'
-Plugin 'iamcco/markdown-preview.vim'
+"Plugin 'junegunn/goyo.vim'
+"Plugin 'iamcco/markdown-preview.vim'
 
 "graphviz
-Plugin 'wannesm/wmgraphviz.vim'
+"Plugin 'wannesm/wmgraphviz.vim'
 
 " git intergration
 Plugin 'tpope/vim-fugitive'
 
 " youcompleteme
-Bundle 'Valloric/YouCompleteMe'
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_keep_logfiles = 1
-let g:ycm_log_level = 'debug'
-let g:ycm_python_binary_path = '/usr/bin/python'
-let g:ycm_python_binary_path = 'python'
+"Bundle 'Valloric/YouCompleteMe'
+"let g:ycm_autoclose_preview_window_after_completion=1
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"let g:ycm_keep_logfiles = 1
+"let g:ycm_log_level = 'debug'
+"let g:ycm_python_binary_path = '/usr/bin/python'
+"let g:ycm_python_binary_path = 'python'
 
 
 
